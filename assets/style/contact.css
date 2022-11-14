@@ -147,6 +147,14 @@ section {
     color: #a6a6a6;
 }
 
+.phone .phone-1::-webkit-outer-spin-button,
+.phone .phone-1::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
 .text {
     display: flex;
     flex-direction: column;
