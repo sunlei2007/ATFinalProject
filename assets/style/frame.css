@@ -27,8 +27,9 @@ h4 {
 }
 /*header style*/
 header {
-    width: 100%;   
-    background-color: #fff;   
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #f3f3f3;
 }
 .site-nav-container {
     display: flex;
