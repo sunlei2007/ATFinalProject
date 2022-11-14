@@ -11,6 +11,7 @@ header {
 ****************************/
 .aboutus {
     display: flex;
+    flex-wrap: wrap;
     gap:15px;
 }
 
@@ -77,13 +78,13 @@ h3 {
 .staffimg {
     display: flex;
     flex-wrap: wrap;
-    gap:5px;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .staffone {
-    width: 165px;
-    height: 135px;
-
+    width: calc(50% - 5px);
 }
 
 
@@ -152,12 +153,27 @@ footer {
         padding: 0px;
     }
     .about, .choose {
-        width: calc(50% -7.5px);
+        width: calc(50% - 7.5px);
+    }
+    .staff{
+        width: 100%;
+    }
+    .staffimg {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .tesbox{
         width: calc(50% - 10px) ;
         padding: 10px;
     } 
+    
+    .staffone {
+        width: calc(33.33% - 6.67px);
+    }
+
 
 }
 
@@ -173,5 +189,18 @@ footer {
 
     .site-content-sec3-col-left, .site-content-sec3-col-right {
         padding: 0px;
+    }
+    .about, .choose, .staff {
+        width: 100%;
+    }
+    .staffimg {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .staffone {
+        width: calc(33.33% - 6.67px);
     }
 }
