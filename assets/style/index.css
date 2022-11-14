@@ -3,7 +3,7 @@
 
 /*content section one*/
 .site-sec1 {
-    padding-top: var(--app-section-padding-height);
+    padding: var(--app-section-padding-height);
     background-color:#fcfbfb;
 }
 .site-content-title{
