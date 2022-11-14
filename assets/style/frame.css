@@ -21,7 +21,7 @@ h4 {
 /*header style*/
 header {
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     height: var(--app-header-height);
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 9999;
