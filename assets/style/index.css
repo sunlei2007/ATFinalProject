@@ -4,7 +4,7 @@
 /*content section one*/
 .site-sec1 {
     padding: var(--app-section-padding-height);
-    background-color:#fcfbfb;
+    background-color:#ffffff;
 }
 .site-content-title{
     padding: var(--app-sectitle-padding-height) 0;
@@ -78,7 +78,8 @@ h3{
 /* section two*/
 .site-sec2 {
     padding-top: var(--app-section-padding-height);
-    background-color:#f3f3f3;
+    background-color: #fff;
+    border-top: solid 1px #f3f3f3;
 }
 .site-content-sec2-padding-container {
     padding: 10px;
