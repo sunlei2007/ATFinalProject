@@ -6,19 +6,113 @@
     <meta name="author" content="Robin">
     <meta name="description" content="My new cool project">
     <meta name="keywords" content="Html,CSS,SEO,web,web development">
-    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
     <title>Assignment</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/style/contact.css?v=1.2" media="all">
-
+    <link rel="stylesheet" href="assets/style/contact.css" media="all">
+    <script src="./assets/script/contact.js" defer></script>
+    <script src="assets/script/index.js" defer></script>
 </head>
 <body>
     <main>
-        
+        <header>
+            <div class="container" >
+                <div class="site-nav-container">
+                    <div class="site-nav-container-sub">
+                        <div class="site-nav-list">
+                            <div class="site-nav-desktop-nav">
+                                <div><a href="index.html">Home</a></div>
+                                <div><a href="about.html">About</a></div>
+                                <div><a href="contact.html">Contact</a></div>
+                            </div>
+                            <div class="site-nav-mobile-nav-container">
+                                <ul class="ul-1">
+                                    <li><p>&nbsp; </p></li>
+                                </ul>
+                                <a href="#"> <i class="site-nav-mobile-nav fa-solid fa-bars fa-2x"></i></a>
+                            </div>
+                        </div>
+                        <div class="site-nav-mobile-menu"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                        <div class="sit-nav-logo"><figure><img class="logo-cls" src="assets/img/logo.png" alt="logo" /></figure></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="site-sec1">
+            <div class="container" style="overflow: hidden;">
+                <div class="map"></div>
+                <div class="contact">
+                    <div class="address">
+                        <div class="title">
+                            <h1>Addresses</h1>
+                        </div>
+                        <div class="address01">
+                            <h3>Address 1:</h3>
+                            <p>The Stable Inc.</p>
+                            <p>130 Henlow Bay, Winnipeg, MB R3Y 1G4</p>
+                        </div>
+                        <div class="tel">
+                            <h3>Telephones:</h3>
+                            <p>+1 431 111 1111</p>
+                            <p>+1 431 222 2222</p>
+                        </div>
+                        <div class="address02">
+                            <h3>Address 2:</h3>
+                            <p>The Stable Inc.</p>
+                            <p>181 Henlow Bay, Winnipeg, MB R3Y 1M7</p>
+                        </div>
+
+                    </div>
+                    <div class="form">
+                        <div class="title"><h1>Contact us</h1></div>
+                        <div class="info">
+                            <div class="name">
+                                <span>Name*</span>
+                                <input type="text" class="name-1">
+                            </div>
+                            <div class="mail">
+                                <span>E-mail*</span>
+                                <input type="text" class="mail-1">
+                            </div>
+                            <div class="phone">
+                                <span>Phone</span>
+                                <input type="number" class="phone-1">
+                            </div>
+                        </div>
+                        <div class="text">
+                            <div class="title">Message*</div>
+                            <textarea cols="30" rows="10" class="message"></textarea>
+                        </div>
+                        <div class="btn">
+                            <button>submit</button>
+                            <span>*required fields</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="site-footer-container">
+                    <div class="site-footer-row">
+                        <div class="site-footer-company-info">
+                            <span>COPYRIGHT</span>
+                            <p class="p-2">© 2022  PRIVACY POLICY </p>
+                            <p class="p-3">Stable</p>
+                        </div>
+                    </div>
+                    <div class="site-footer-social-link">
+                        <i>Stay Connected</i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </main>
 </body>
 </html>

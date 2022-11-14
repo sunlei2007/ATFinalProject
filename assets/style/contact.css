@@ -1,112 +1,197 @@
 ﻿@import "frame.css";
 /*herobanner*/
-.herobanner {
+
+
+.container .map {
     width: 100%;
-    height: calc(100vh * 0.6);
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner2-bg.jpg) no-repeat center center;
-    background-size: cover;
+    height: 560px;
+    background: url(../img/map.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.contact {
+    width: 100%;
+    height: 506px;
+    border-top: 1px solid #f3f3f3;
+    margin: 65px 0;
+    display: flex;
+    border-bottom: 1px solid #f3f3f3;
+    
+}
+
+.contact h1 {
+    font-size: 32px;
+}
+
+.contact h2 {
+    font-size: 24px;
+}
+
+.contact h3 {
+    font-size: 18.72px;
+}
+
+.contact .address {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+}
+
+.address .title {
     display: flex;
     justify-content: center;
-    align-items: center;
-    animation: banner-content 0.5s ease-in-out;
-    animation-duration: 1s;
 }
 
-.banner-title, .banner-subtitle {
-    text-align: left;
-    animation: banner-content 0.5s ease-in-out;
-    animation-duration: 3s;
+
+
+.contact .form {
+    width: 680px;
+    height: 400px;
+}
+.address {
+    margin-top: 65px;
+}
+.address p {
+    color: #a6a6a6;
 }
 
-.banner-subtitle a + a {
-    margin-left: 10px;
+.address01 {
+    margin-top: 35px;
+    margin-left: 15px;
 }
 
-.banner-subtitle a {
-    font-size: 18px;
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.25s ease-in-out;
+.address01 h3 {
+    margin-bottom: 10px;
 }
 
-.banner-subtitle a:hover {
-    color: var(--app-blue);
+.tel {
+    margin-top: 20px;
+    margin-left: 15px;
 }
 
-.site-content-title {
-    padding: var(--app-sectitle-padding-height) 0;
-    text-align: center;
+.tel h3 {
+    margin-bottom: 10px;
 }
- 
-.site-content-row {
+
+.address02 {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.address02 h3 {
+    margin-bottom: 10px;
+}
+
+.contact .form {
+    margin-top: 65px;
+}
+
+.form {
+    margin-left: 30px;
+}
+
+.form .info {
+    margin-top: 35px;
+}
+
+    .form .info input {
+        width: 200px;
+        height: 30px;
+        font-size: 18px;
+        border: 1px solid #c7c7c7;
+    }
+
+.form .title {
     display: flex;
-    flex-flow: row wrap;
-}
-/*section three*/
-.site-sec3 {
-    padding-top: var(--app-section-padding-height);
-    padding-bottom: var(--app-section-padding-height);
-    background-color: #fcfbfb;
+    justify-content: center;
 }
 
-.site-content-sec3-padding-container {
-    padding: 10px;
-    width: 50%;
+.form .info {
+    display: flex;
 }
 
-.site-content-sec3-col-1-describe {
-    color: var(--app-content-text-color);
-    padding-top: 20px;
+.info .name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    color: #a6a6a6;
 }
 
-.site-content-sec3-col-left {
-    padding-right: 20px;
+.info .mail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    color: #a6a6a6;
 }
 
-.site-content-sec3-col-right {
-    padding-left: 20px;
+.info .phone {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    color: #a6a6a6;
 }
 
-.form-name {
+.phone .phone-1::-webkit-outer-spin-button,
+.phone .phone-1::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.text .title {
+    display: flex;
+    justify-content: start;
+    color: #a6a6a6;
+}
+
+    .text textarea {
+        width: 620px;
+        height: 122px;
+        border: 1px solid #c7c7c7;
+        resize: none;
+    }
+
+.btn {
     width: 100%;
-    height: 60px;
-    border: solid 1px #cce8fe;
-    padding: 10px 26px 10px 26px;
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 5px;
+    height: 30px;
 }
 
-.form-email {
-    width: 100%;
-    height: 60px;
-    border: solid 1px #cce8fe;
-    padding: 10px 26px 10px 26px;
-    margin-bottom: 30px;
-}
-
-.form-message {
-    width: 100%;
-    height: 160px;
-    border: solid 1px #cce8fe;
-    padding: 10px 26px 10px 26px;
-    margin-bottom: 30px;
-}
-
-.form-submit {
-    width: 100%;
-    height: 60px;
+.btn button {
+    width: 100px;
+    height: 35px;
+    margin-right: 10px;
     font-size: 16px;
-    color: #fff;
-    background-color: var(--app-blue);
-    transition: all 0.25s ease-in-out;
+    border-radius: 8px;
 }
 
-.form-submit:hover {
-    background-color: #0f97fb;
+.btn span {
+    font-size: 14px;
+    color: #a6a6a6;
 }
+.site-sec1{
+    background-color:#fff;
+}
+
+
+
+
+
+
+
 @media(max-width: 768px) {
-
-
-
     .site-content-sec1-col-1, .site-content-sec1-col-2 {
         width: 50%;
     }
@@ -130,6 +215,68 @@
     .site-content-sec3-col-left, .site-content-sec3-col-right {
         padding: 0px;
     }
+ 
+    .container .map {
+        height: 360px;
+    }
+
+    .contact {
+        height: 990px;
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .address {
+        width: 100%;
+        height: 400px;
+        background-color: #fff;
+    }
+
+    .contact .form {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .address {
+        margin-top: 35px;
+    }
+
+
+    .form .name {
+        margin-left: 0px;
+    }
+
+    .form .info input {
+        width: 98%;
+    }
+
+    .form .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form .mail {
+        margin-left: 0px;
+    }
+
+    .form .phone {
+        margin-left: 0px;
+    }
+
+    .text {
+        margin-left: 0px;
+    }
+
+        .text textarea {
+            width: 98%;
+            height: 122px;
+            border: 1px solid #c7c7c7;
+            resize: none;
+        }
+
+    
+
 }
 
 @media(max-width: 468px) {
@@ -145,4 +292,35 @@
     .site-content-sec3-col-left, .site-content-sec3-col-right {
         padding: 0px;
     }
+
+    .container .map {
+        height: 260px;
+    }
+
+    .contact {
+        height: 920px;
+        border-top: 1px solid #a6a6a6;
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #a6a6a6;
+    }
+
+    .contact .address {
+        width: 100%;
+        margin-top: 15px;
+        height: 400px;
+        background-color: #fff;
+    }
+
+    .contact .form {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    .address {
+        margin-top: 35px;
+    }
+ 
 }
