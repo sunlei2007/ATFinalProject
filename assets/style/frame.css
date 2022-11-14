@@ -275,7 +275,12 @@ footer {
     color:#000;
     margin-top:20px;
 }
-
+.p-3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--app-body-background);
+    margin-top: 20px;
+}
 .site-footer-social-link {
     display: flex;
     justify-content:center;
