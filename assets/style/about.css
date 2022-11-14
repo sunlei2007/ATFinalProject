@@ -95,11 +95,13 @@ h3 {
 
 .tescontainer {
     display: flex;
+    flex-wrap: wrap;
     gap:15px;
+    width: 100%;
 }
 
 .tesbox {
-    width: calc(25% - 11.11px);
+    width: calc(25% - 11.25px);
 }
 
 .tescontent {
@@ -149,7 +151,13 @@ footer {
     .site-content-sec3-col-left, .site-content-sec3-col-right {
         padding: 0px;
     }
-
+    .about, .choose {
+        width: calc(50% -7.5px);
+    }
+    .tesbox{
+        width: calc(50% - 10px) ;
+        padding: 10px;
+    } 
 
 }
 
