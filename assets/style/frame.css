@@ -3,12 +3,19 @@
 /*Header footer use*/
 /*---------------------------*/
 :root {
-    --app-header-height: 56px;
+    --app-body-background: #999eb1;
+    --app-header-height: 230px;
+    --app-header-nav-height:80px;
     --app-footer-height: 400px;
-    --app-section-padding-height: 120px;
+    --app-section-padding-height: 20px;
     --app-sectitle-padding-height: 40px;
     --app-content-text-color: #949393;
     --app-blue: #5fb7f8;
+}
+body {
+    /* background-color: var(--app-body-background); */
+    padding-top:10px;
+    padding-bottom:10px;
 }
 h3 {
     font-size: 36px;
@@ -28,7 +35,18 @@ header {
 }
 .site-nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+.site-nav-mobile-nav-container {
+    display: flex;
+    align-items: center;
+}
+.site-nav-container-sub {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /*header content*/
 .site-nav-container > div {
@@ -43,52 +61,117 @@ header {
     text-transform: uppercase;
 }
 .site-nav-list {
-    
+    width: 100%;
     display: flex;
     align-items: center;
-    
+    justify-content:center;
 }
 
 .site-nav-desktop-nav {
-    height: var(--app-header-height);
-}
-.site-nav-mobile-nav {
-     display:none;
-    color: #fff;
+    height: var(--app-header-nav-height);
+    display: flex;
    
+
 }
-.site-nav-desktop-nav ul {
-    list-style: none;
+.site-nav-desktop-nav div {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+    color: #000;
 }
+.site-nav-desktop-nav div:hover {
+    color:#fff;
+    background-color: var(--app-body-background);
+    
+}
+.site-nav-desktop-nav div:hover a{
+    color: #fff;
+        
+}
+.sit-nav-logo{
+    padding-top:10px;
+    padding-bottom:20px;
+}
+
+.site-nav-mobile-nav {
+    display: none;
+    color: #000;
+}
+ 
 .ul-1 li {
-    line-height: var(--app-header-height);
+    line-height: var(--app-header-nav-height);
     display: inline;
 }
-
-.site-nav-desktop-nav ul li {
-    line-height: var(--app-header-height);
-    display: inline;
+.site-nav-mobile-menu ul li {
+    float: none;
+    width: 100px;
+    
+}
+.site-nav-mobile-menu ul {
+   margin-left:10px;
+   margin-top:10px;
+}
+.site-nav-mobile-menu {
+   
+    width: 100%;
+    height: 0px;
+    background-color: var(--app-body-background);
+    overflow: hidden;
+    border-radius: 4px;
+}
+    .site-nav-mobile-menu a {
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 0.2px;
+    }
+.mobile-menu-ani-expand {
+    animation: mobile-menu-ani-expand 0.5s linear;
+    animation-fill-mode: forwards;
 }
 
-nav ul li + li {
-    margin-left: 18px;
+@keyframes mobile-menu-ani-expand {
+    0% {
+        height: 0;
+         
+    }
+
+    100% {
+        height: 100px;
+         
+    }
 }
+.mobile-menu-ani-collapse {
+    animation: mobile-menu-ani-collapse 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mobile-menu-ani-collapse {
+    0% {
+        height: 100px;
+    }
+
+    100% {
+        height: 0px;
+    }
+}
+
 
 header a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     letter-spacing: 0.2px;
-    transition: color 0.25s ease-in-out;
 }
 
-nav ul li a:hover {
-    color: var(--app-blue);
-}
+
+
 /*herobanner style*/
 .herobanner {
     width: 100%;
     height: calc(100vh * 0.8);
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner-bg.jpg) no-repeat center center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/banner-1.jpg) no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -101,7 +184,7 @@ nav ul li a:hover {
     animation-duration: 1s;
 }
 .banner-title h2 {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 700;
     color: #fff;
 }
@@ -165,7 +248,8 @@ nav ul li a:hover {
 /*footer style*/
 footer {
     height: var(--app-footer-height);
-    background-color: #222222;
+    background-color: #fff;
+    border-top: 1px solid #f3f3f3;
 }
 
 /*fooder content*/
@@ -184,23 +268,17 @@ footer {
     text-align: center;  
     overflow: hidden;
 }
-.site-footer-company-info span a {
-    color: #fff;
-    font-size: 36px;
-    font-weight: 400;
-    color: #fff;
-    font-weight: 500;
+.site-footer-company-info span{
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
     text-decoration:none;
 }
 .p-2{
+    color:#000;
     margin-top:20px;
 }
-.site-footer-company-info p {
-    color: #fff;
-    font-size: 16px;
-    color: #fff;
-    line-height: 30px;
-}
+
 .site-footer-social-link {
     display: flex;
     justify-content:center;
@@ -224,7 +302,14 @@ footer {
 
 
 @media(max-width: 768px) {
-     
+
+    .site-nav-list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
     .site-nav-desktop-nav {
         display: none;
     }
