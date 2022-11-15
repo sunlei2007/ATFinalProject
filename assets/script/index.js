@@ -8,7 +8,7 @@ let picIndex = 0;
 window.onload = function () {
     setInterval(function () {
         picIndex++;
-        if (picIndex == 3) {
+        if (picIndex == arrPic.length) {
             picIndex = 0;
         }
         heroBanner.style.background = "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(assets/img/" + arrPic[picIndex] + ") no-repeat center center";
