@@ -365,17 +365,22 @@ footer {
     h3 {
         font-size: 24px;
     }
-
+    .site-footer-company-info .p-3 {
+        font-size: 24px;
+    }
     h4 {
         font-size: 18px;
     }
 
-    .site-footer-company-info span a {
-        font-size: 30px;
+    .site-footer-company-info span{
+        font-size: 20px;
     }
 
-    .site-footer-company-info p {
-        font-size: 14px;
+    .site-footer-company-info .p-2 {
+        font-size: 18px;
+    }
+    .site-footer-company-info .p-3 {
+        font-size: 20px;
     }
 }
 
@@ -405,11 +410,14 @@ footer {
         font-size: 16px;
     }
 
-    .site-footer-company-info span a {
-        font-size: 26px;
+    .site-footer-company-info span{
+        font-size: 20px;
     }
 
-    .site-footer-company-info p {
-        font-size: 12px;
+    .site-footer-company-info p-2 {
+        font-size: 18px;
+    }
+    .site-footer-company-info p-3 {
+        font-size: 20px;
     }
 }
