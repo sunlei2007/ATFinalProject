@@ -7,6 +7,9 @@
 .site-sec1{
     background-color:#fff;
 }
+/****************************
+*                           *
+****************************/
 .aboutus {
     display: flex;
     flex-wrap: wrap;
@@ -21,6 +24,10 @@
 
 .about {
     width: calc(33.33% - 10px);
+}
+
+.aboutlink a {
+    text-decoration: none;
 }
 
 h3 {
@@ -115,7 +122,8 @@ h3 {
     margin: 0 0 31px 0;
 }
 
- 
+
+
 /****************************
 *                           *
 ****************************/
