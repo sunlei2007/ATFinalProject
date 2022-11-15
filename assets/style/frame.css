@@ -113,7 +113,7 @@ header {
    margin-top:10px;
 }
 .site-nav-mobile-menu {
-   
+    display: none;
     width: 100%;
     height: 0px;
     background-color: var(--app-body-background);
@@ -137,7 +137,7 @@ header {
     }
 
     100% {
-        height: 100px;
+        height: 90px;
          
     }
 }
@@ -148,7 +148,7 @@ header {
 
 @keyframes mobile-menu-ani-collapse {
     0% {
-        height: 100px;
+        height: 90px;
     }
 
     100% {
@@ -303,9 +303,14 @@ footer {
     color: var(--app-blue);
 }
 
-
+ 
 @media(max-width: 768px) {
 
+    .site-nav-mobile-menu {
+        
+        display: block;
+        height:0px;
+    }
     .site-nav-list {
         width: 100%;
         display: flex;
@@ -332,6 +337,7 @@ footer {
     .site-content-sec2-col-1, .site-content-sec2-col-2 {
         width: 100%;
     }
+
     .site-content-sec3-col-1, .site-content-sec3-col-2 {
         width: 100%;
     }
@@ -340,23 +346,26 @@ footer {
         padding: 0px;
     }
 
-    .site-content-sec3-col-left , .site-content-sec3-col-right {
+    .site-content-sec3-col-left, .site-content-sec3-col-right {
         padding: 0px;
     }
-    h2{
-        font-size:20px;
+
+    h2 {
+        font-size: 20px;
     }
+
     .banner-title h2 {
         font-size: 24px;
-       
     }
+
     .banner-subtitle p {
         font-size: 18px;
-       
     }
+
     h3 {
         font-size: 24px;
     }
+
     h4 {
         font-size: 18px;
     }
@@ -364,16 +373,18 @@ footer {
     .site-footer-company-info span a {
         font-size: 30px;
     }
-    .site-footer-company-info p {     
+
+    .site-footer-company-info p {
         font-size: 14px;
     }
-
 }
+
 @media(max-width: 468px) {
 
-    .site-content-sec1-col-1 , .site-content-sec1-col-2 ,.site-content-sec1-col-3 {
+    .site-content-sec1-col-1, .site-content-sec1-col-2, .site-content-sec1-col-3 {
         width: 100%
     }
+
     h2 {
         font-size: 16px;
     }
