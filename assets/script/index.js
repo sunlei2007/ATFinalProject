@@ -3,12 +3,12 @@ const mobileNav = document.querySelector(".site-nav-mobile-nav");
 const mobileMenu = document.querySelector(".site-nav-mobile-menu");
 const heroBanner = document.querySelector(".herobanner");
 
-const arrPic = ["banner-1.jpg", "banner-2.jpg"];
+const arrPic = ["banner-1.jpg", "banner-2.jpg", "banner-3.jpg"];
 let picIndex = 0;
 window.onload = function () {
     setInterval(function () {
         picIndex++;
-        if (picIndex == 2) {
+        if (picIndex == 3) {
             picIndex = 0;
         }
         heroBanner.style.background = "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(assets/img/" + arrPic[picIndex] + ") no-repeat center center";
